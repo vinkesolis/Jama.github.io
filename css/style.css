@@ -1,0 +1,169 @@
+.titulo {
+    font-style: oblique ;
+    padding-right: 150px;      /*<--Titulo pagina*/
+    font-size: 60px;
+}
+
+
+.sitio-oficial {
+    padding-top: 120px;
+    padding-right: 30px;         /*<--Muevo el sitio oficial y subrayo */
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4{    /*<-- a todos los h que haya les doy subrayado*/
+    text-decoration: underline;
+}
+
+
+
+/*aca le damos espaciado a las cajas del encabezado y el pie de pagina*/
+.encabezado, .piedepagina {
+    display: flex;
+    justify-content: space-between; 
+    height: 162px;       
+}
+
+/*al navegador lo volteamos dandole flex y lo espaciamos con el space-between*/
+.navegador {
+    display: flex;
+    justify-content: space-between;   
+    height: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color:#ADADAD;
+}
+
+/*A los li le damos una fuente nueva y le sacamos los numeros.*/
+li {
+    font-style: oblique;
+}
+
+.boton, .boton-down {
+    list-style: none;    
+}
+
+.boton-down{
+    padding-bottom: 4px;
+
+}
+
+/*le ponemos el color a las letras del navegador y del pie de pagina color negro(le sacamos - 
+el color azul por defecto) y le quitamos subrayado.*/
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/*A estos 4 le damos los mismos estilos*/
+.boxformulario, .formulario, .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 20px;
+  
+}
+.contenedor{  color:#ADADAD;
+}
+
+
+/*Al contenido de guia de talles le damos flex y espacio entre cajas*/
+.guiatalles {
+    display: flex;
+    justify-content: space-around;
+}
+/*Agrandamos el ancho de la tabla del medio asi queda pareja con las demas*/
+.box-tabla-medio {
+    width: 240px;
+
+}
+
+/*Le ponemos fondo*/
+.guiatalles, .contenedor, .piedepagina{
+    background-image: url(../css/imagenes\ css/fondo.jpg);
+}
+.piedepagina{
+    color:#ADADAD;
+}
+.contenido-ropa, .contactenos, .contenido-zapatos {
+    display: flex;
+    justify-content: space-around;
+    background-image: url(../css/imagenes\ css/fondo.jpg);
+}
+
+/*ubicamos las listas mas a la izquierda*/
+.box-lista-ropa, .box-lista-zapatos {
+    margin-right: 80px;
+}
+
+/*le damos margen a las listas hacia abajo para que se separen*/
+.lista-ropa, .lista-zapatos {
+    margin-bottom: 40px;
+}
+
+/*le damos estilo a las fotos de los zapatos y a las fotos de la ropa*/
+.fotoszapatos, .fotosropa{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    color: #ADADAD;
+}
+/*A la parte de arriba de la tabla (thead) le agrandamos letra y le cambiamos el fondo de color*/
+thead {
+    font-size: 17px;
+    background-color: #d6d5d6;    
+}
+
+/*Encuadramos las tablas y centramos el contenido*/
+table, tr, td, th {border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+/*separo el numero ramdom con el input para ingresar numero*/
+.captcha {
+    margin-bottom: 20px;    
+}
+
+/*El captcha que se muestre estara en una caja del tamaño que le pusimos y con los numeros agrandados.*/
+.mostrarvalorcaptcha {
+    width: 100px;
+    height: 40px;
+    font-size: xx-large;
+}
+/*le damos estilo a la caja que va a contener todo el formulario de verificacion (captcha)*/
+.box-captcha {
+    border: 2px solid lightgray ;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+.labelcaptcha {
+    display: flex;   
+    justify-content: center;  
+}
+/*le ponemos el mismo fondo al formulario de envio y al formulario captcha*/
+.boxformulario, .box-captcha{
+    background-image: url(../css/imagenes\ css/fondoformulario.jpg);
+}
+.formulario-in{
+    margin-bottom: 5px;
+}
+
+/*corremos hacia la izquierda el titulo de navegador*/
+.nav-down {
+    padding-left: 30px;
+}
+/*bajamos el copyright*/
+.copyright {
+    padding-top: 120px;    
+}
+
